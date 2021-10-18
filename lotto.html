@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>請寫一段JavaScript的程式,在網頁上隨機產生6個不重覆的大樂透數字(介於1..49之間的數字)
+        (Math, 陣列 練習)
+        </h2>
+    <script>
+        var arr = []
+            while(arr.length < 6){
+            var randomnumber = Math.floor(Math.random()*49) + 1;
+            if(arr.indexOf(randomnumber) > -1) continue;
+            arr[arr.length] = randomnumber;
+        }
+        document.write(arr);
+        </script>
+</body>
+</html>
